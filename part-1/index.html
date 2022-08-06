@@ -6,34 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="This is a html and css course" />
     <style>
-      ul.navigation-menu {
-        list-style-type: none;
+      table,
+      td,
+      th,
+      tr {
+        border: 1px solid rgb(97, 87, 87);
+        border-collapse: collapse;
+        padding: 10px;
+        text-align: center;
       }
     </style>
   </head>
   <body>
-    <ul class="navigation-menu">
-      <li>
-        Home
-        <ul>
-          <li>Link 1</li>
-          <li>Link 2</li>
-          <li>Link 3</li>
-        </ul>
-      </li>
-      <li>About us</li>
-      <li>Pricing</li>
-      <li>Media</li>
-    </ul>
-    <ol>
-      <li>pay your credits</li>
-      <li>take rest</li>
-      <li>have a good meal</li>
-      <li>trip a lot</li>
-    </ol>
-
-    <dt>Skills</dt>
-    <dd>integration</dd>
-    <dd>figma</dd>
+    <table>
+      <thead>
+        <tr>
+          <th colspan="2">Expenses</th>
+        </tr>
+        <tr>
+          <th>Category</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Marketing</td>
+          <td>$100</td>
+        </tr>
+        <tr>
+          <td>Accounting</td>
+          <td>$200</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <th>Total</th>
+        <th>$300</th>
+      </tfoot>
+    </table>
   </body>
 </html>
