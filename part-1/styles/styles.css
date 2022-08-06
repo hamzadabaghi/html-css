@@ -1,0 +1,11 @@
+body {
+  margin: 10px;
+}
+p {
+  color: red;
+}
+
+.first-paragraph {
+  color: blue;
+  font-weight: bold;
+}
