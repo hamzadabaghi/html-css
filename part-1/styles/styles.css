@@ -3,58 +3,24 @@ body {
   margin: 10px;
 }
 
-/* selects the first element of each type after the article tag */
-article :first-of-type {
-  font-size: 140%;
-  font-style: italic;
-}
-/* selects the first element of type p after the article tag */
-article p:first-of-type {
-  font-size: 140%;
-  font-style: italic;
-}
-
-/* selects the last element of type p after the article tag */
-article p:last-of-type {
-  font-weight: lighter;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: green;
-}
-
-/* selects the first element after the article tag */
-article :first-child {
-  font-size: 140%;
-  font-style: italic;
+/* pseudo element : first-letter of p */
+p::first-letter {
   color: red;
+  font-weight: 140%;
 }
 
-/* selects the last element after the article tag = tag :last-of-type */
-article :last-child {
-  font-size: 140%;
-  font-style: italic;
-  color: rgb(88, 169, 8);
+/* selection background color */
+::selection {
+  background-color: pink;
 }
 
-/* selects items based on their positions in ul document */
-ul li:nth-child(odd) {
-  font-size: 140%;
-  font-style: italic;
-  color: rgb(223, 26, 0);
+/* before pseudo element */
+p::before {
+  content: '...';
+  display: block; /* convert the inline level element to a block level element*/
 }
-ul li:nth-child(even) {
-  font-size: 140%;
-  font-style: italic;
-  color: rgb(77, 0, 164);
-}
-
-/* links */
-a:visited,
-a:link {
-  color: dodgerblue;
-}
-
-/* hover:mouse, focus: tap key*/
-a:hover,
-a:focus {
-  color: darkgoldenrod;
+/* after pseudo element */
+p::after {
+  content: '...';
+  display: block; /* convert the inline level element to a block level element*/
 }
