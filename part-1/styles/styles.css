@@ -3,42 +3,58 @@ body {
   margin: 10px;
 }
 
-/* id selector */
-#products {
-  margin: 0 auto;
-  width: 250px;
+/* selects the first element of each type after the article tag */
+article :first-of-type {
+  font-size: 140%;
+  font-style: italic;
+}
+/* selects the first element of type p after the article tag */
+article p:first-of-type {
+  font-size: 140%;
+  font-style: italic;
 }
 
-/* class selector */
-.product {
-  border: 1px solid #ccc;
-  margin: 10px;
-  padding: 10px;
+/* selects the last element of type p after the article tag */
+article p:last-of-type {
+  font-weight: lighter;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: green;
 }
 
-/* selects just the first p element after the product section */
-.product > p {
-  color: rgb(62, 11, 191);
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-/* selects all the ul elements after the product2 article */
-.product2 ul {
+/* selects the first element after the article tag */
+article :first-child {
+  font-size: 140%;
+  font-style: italic;
   color: red;
-  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-/* selects imediatly the h5 element that comes after the product2 article */
-.product2 + h5 {
-  color: rgb(147, 129, 11);
-  font-family: Georgia, 'Times New Roman', Times, serif;
+/* selects the last element after the article tag = tag :last-of-type */
+article :last-child {
+  font-size: 140%;
+  font-style: italic;
+  color: rgb(88, 169, 8);
 }
 
-/* selects all the h5 element that come after the product2 article */
-.product2 ~ h5 {
-  color: rgb(147, 129, 11);
-  font-family: Georgia, 'Times New Roman', Times, serif;
+/* selects items based on their positions in ul document */
+ul li:nth-child(odd) {
+  font-size: 140%;
+  font-style: italic;
+  color: rgb(223, 26, 0);
+}
+ul li:nth-child(even) {
+  font-size: 140%;
+  font-style: italic;
+  color: rgb(77, 0, 164);
 }
 
-/* conclusion : relational selectors are great when you know that the referenced element won't changed in the future
-   , they have also a slower rendering speaking of the browser, it's not generally a good practice*/
+/* links */
+a:visited,
+a:link {
+  color: dodgerblue;
+}
+
+/* hover:mouse, focus: tap key*/
+a:hover,
+a:focus {
+  color: darkgoldenrod;
+}
