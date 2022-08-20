@@ -3,24 +3,15 @@ body {
   margin: 10px;
 }
 
-/* pseudo element : first-letter of p */
-p::first-letter {
+h1 {
   color: red;
-  font-weight: 140%;
+}
+#yj h1 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: rgb(143, 18, 18);
 }
 
-/* selection background color */
-::selection {
-  background-color: pink;
-}
-
-/* before pseudo element */
-p::before {
-  content: '...';
-  display: block; /* convert the inline level element to a block level element*/
-}
-/* after pseudo element */
-p::after {
-  content: '...';
-  display: block; /* convert the inline level element to a block level element*/
+.highlight {
+  background-color: yellow;
+  color: blue;
 }
