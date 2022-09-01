@@ -1,0 +1,17 @@
+/* tags selector */
+body {
+  margin: 10px;
+}
+
+h1 {
+  color: red;
+}
+#yj h1 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: rgb(143, 18, 18);
+}
+
+.highlight {
+  background-color: yellow;
+  color: blue;
+}
